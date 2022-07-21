@@ -7,8 +7,14 @@
     <title>Insight</title>
     <link rel="stylesheet" href="./insight.css"/>
   </head>
-  <body>
+  <body onload="append(data)">
+    <div id="top_most">
+        <div><h1>News,resources,and insights</h1>
+            <p>The latest from the Fathom team on artificial intelligence, revenue cycle management, digital health and everything in between.</p></div>
+        </div>
  <div id="main">
+   
+    
 <div id="top_news">
     <img/>
     <div id="right">
@@ -19,15 +25,15 @@
     </div>
 </div>
 <div id="filter">
-    <h3>All <br>Posts</h3>
-    <h3>Industry <br>News</h3>
-    <h3>Automation</h3>
-    <h3>Product <br>News</h3>
-    <h3>Artificial <br>Intelligence</h3>
-    <h3>Insider</h3>
-    <h3>Machine <br>Learning</h3>
-    <h3>Press<br> Release</h3>
-    <h3>Quality</h3>
+    <h3 onclick="append(data)" >All <br>Posts</h3>
+    <h3 onclick="filter('INDUSTRY NEWS')">Industry <br>News</h3>
+    <h3 onclick="filter('AUTOMATION')">Automation</h3>
+    <h3 onclick="filter('PRODUCT NEWS')">Product <br>News</h3>
+    <h3 onclick="filter('ARTIFICIAL INTELLIGENCE')">Artificial <br>Intelligence</h3>
+    <h3 onclick="filter('INSIDER')">Insider</h3>
+    <h3 onclick="filter('MACHINE LEARNING')">Machine <br>Learning</h3>
+    <h3 onclick="filter('PRESS RELEASE')">Press<br> Release</h3>
+    <h3 onclick="filter('QUALITY')">Quality</h3>
 
 </div>
 <div id="news_div"></div>
@@ -46,6 +52,6 @@
   </body>
 </html>
 
-<script src="insight.js">
+<script src="insight.js" >
  
 </script>

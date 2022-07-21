@@ -111,7 +111,7 @@ let data= [
     }
   ]
 
-//   localStorage.setItem("myData",JSON.stringify(data))
+  localStorage.setItem("mynewsData",JSON.stringify(data))
 
 
 let imgHead= document.querySelector("#top_news>img")
@@ -120,6 +120,11 @@ let h4= document.querySelector("#right>h4")
 h4.innerText=data[10].type
 let h1= document.querySelector("#right>h1")
 h1.innerText=data[10].heading
+h1.addEventListener("click",function(){
+  console.log(data[10])
+  localStorage.setItem("news",JSON.stringify(data[10]))
+   window.location.href="./news.html"
+})
 let h3= document.querySelector("#right>h3")
 h3.innerText=data[10].subheading
 let p= document.querySelector("#right>p")
@@ -129,8 +134,14 @@ p.innerText=data[10].summery
 
 
 
-let newsContainer=document.getElementById("news_div");
-data.forEach((ele)=>{
+
+
+let append=(data)=>{
+  let newsContainer=document.getElementById("news_div");
+  newsContainer.innerHTML=null;
+  let head=document.createElement("h1");
+  
+  data.forEach((ele)=>{
 
     let box=document.createElement("div");
     box.setAttribute("id","box")
@@ -144,6 +155,9 @@ data.forEach((ele)=>{
     type.innerText=ele.type;
     let heading=document.createElement("h2");
     heading.innerText=ele.heading;
+    heading.addEventListener("click",function(){
+      store(ele)
+    })
     let summery=document.createElement("p");
     summery.innerText=ele.summery;
 
@@ -152,10 +166,29 @@ data.forEach((ele)=>{
     newsContainer.append(box)
 
 
-
-
-
-
-
 })
+
+}
+
+
+let store=(ele)=>{
+
+localStorage.setItem("news",JSON.stringify(ele))
+window.location.href="./news.html"
+
+
+}
+
+
+  let filter=(x)=>{
+    
+    let filtered=data.filter(function(ele){
+     
+      return ele.type==x
+    })
+
+    console.log(filtered)
+    append(filtered)
+  }
+
 
