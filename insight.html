@@ -4,54 +4,62 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Insight</title>
-    <link rel="stylesheet" href="./insight.css"/>
+    <title>Fathom Blog</title>
+    <link rel="stylesheet" href="./insight.css" />
   </head>
-  <body onload="append(data)">
+  <body onload="append(data,5)">
     <div id="top_most">
-        <div><h1>News,resources,and insights</h1>
-            <p>The latest from the Fathom team on artificial intelligence, revenue cycle management, digital health and everything in between.</p></div>
+      <h1>News,resources,and insights</h1>
+      <div>
+        <p>
+          The latest from the Fathom team on artificial intelligence, revenue
+          cycle management, digital health and everything in between.
+        </p>
+      </div>
+    </div>
+    <div id="main">
+      <div id="top_news">
+        <img />
+        <div id="right">
+          <h6></h6>
+          <h3></h3>
+          <h4></h4>
+          <p></p>
         </div>
- <div id="main">
-   
-    
-<div id="top_news">
-    <img/>
-    <div id="right">
-        <h4></h4>
-        <h1></h1>
-        <h3></h3>
-        <p></p>
+      </div>
+      <div id="filter">
+        <h3 onclick="append(data,(data.length-1))">All <br />Posts</h3>
+        <h3 onclick="filter('INDUSTRY NEWS')">Industry <br />News</h3>
+        <h3 onclick="filter('AUTOMATION')">Automation</h3>
+        <h3 onclick="filter('PRODUCT NEWS')">Product <br />News</h3>
+        <h3 onclick="filter('ARTIFICIAL INTELLIGENCE')">
+          Artificial <br />Intelligence
+        </h3>
+        <h3 onclick="filter('INSIDER')">Insider</h3>
+        <h3 onclick="filter('MACHINE LEARNING')">Machine <br />Learning</h3>
+        <h3 onclick="filter('PRESS RELEASE')">
+          Press<br />
+          Release
+        </h3>
+        <h3 onclick="filter('QUALITY')">Quality</h3>
+      </div>
+      <div id="news_div"></div>
     </div>
-</div>
-<div id="filter">
-    <h3 onclick="append(data)" >All <br>Posts</h3>
-    <h3 onclick="filter('INDUSTRY NEWS')">Industry <br>News</h3>
-    <h3 onclick="filter('AUTOMATION')">Automation</h3>
-    <h3 onclick="filter('PRODUCT NEWS')">Product <br>News</h3>
-    <h3 onclick="filter('ARTIFICIAL INTELLIGENCE')">Artificial <br>Intelligence</h3>
-    <h3 onclick="filter('INSIDER')">Insider</h3>
-    <h3 onclick="filter('MACHINE LEARNING')">Machine <br>Learning</h3>
-    <h3 onclick="filter('PRESS RELEASE')">Press<br> Release</h3>
-    <h3 onclick="filter('QUALITY')">Quality</h3>
-
-</div>
-<div id="news_div"></div>
-<div id="subscribe">
-    <div id="s1">
+    <button id="btn" onclick="loadMore()">LOAD MORE POSTS</button>
+    <div id="subscribe">
+      <div id="s1">
         <h1>Stay up to date</h1>
-        <h3>Get the latest in Industry news and insights <br>delivered straignt to your inbox</h3>
+        <h3>
+          Get the latest in Industry news and insights <br />delivered straignt
+          to your inbox
+        </h3>
+      </div>
+      <div id="s2">
+        <input id="email" type="email" placeholder="email address" required />
+        <button>SUBSCRIBE</button>
+      </div>
     </div>
-    <div id="s2">
-        <input id="email" type="email" placeholder="email address"/>
-        <BUTTON>SUBSCRIBE</BUTTON>
-    </div>
-</div>
- </div>
-
   </body>
 </html>
 
-<script src="insight.js" >
- 
-</script>
+<script src="insight.js"></script>
