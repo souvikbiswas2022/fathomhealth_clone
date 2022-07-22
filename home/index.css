@@ -1,0 +1,447 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* https://blog.fathomhealth.com/hubfs/assets2020/background.jpg */
+
+/* navbar */
+
+#navbar {
+    width: 100%;
+    border: 1px solid transparent;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 40% 55%;
+    height: 64.78px;
+    padding: 0 20px;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    /* border-bottom: 1px solid #6f8093; */
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+
+#navbar>div:first-child {
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+}
+
+#navbar>div:first-child>img {
+    width: 145px;
+    height: 25px;
+    display: block;
+    margin: left;
+    border: 1px solid transparent;
+    margin-left: 30px;
+}
+
+#navbar>div:last-child {
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+#navbar>div:last-child>a {
+    text-decoration: none;
+    color: rgb(30, 30, 30);
+    font-size: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+
+/* banner */
+
+
+#banner {
+    width: 100%;
+    height: 520px;
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(219.46deg, #110036 27.63%, #170059 100%), linear-gradient(219.46deg, #FFFFFF 27.63%, #19004E 100%), radial-gradient(100% 246.94% at 100% 100%, #FFFFFF 0%, #000353 100%), linear-gradient(121.18deg, #1400FF 0.45%, #3A0000 100%), linear-gradient(192.86deg, #F06060 9.22%, #008B7A 87.25%), linear-gradient(150.76deg, #0015D5 15.35%, #000B6C 89.57%);
+    background-blend-mode: screen, overlay, overlay, difference, difference, normal;
+}
+
+#banner>h1 {
+    font-size: 80px;
+    color: white;
+    font-weight: 400;
+    margin-top: -20px;
+}
+
+#banner>div{
+   display: flex;
+   align-items: center;
+    border: 1px solid transparent;
+    height: 100px;
+    width: 51%;
+    text-align: center;
+    margin-top: 10px;   
+}
+#banner>div>p{
+    color: white;
+    font-weight:10;
+    font-size: 30px;
+}
+
+#banner>a>button {
+    font-size: 12px;
+    margin-top: 50px;
+    padding: 15px 20px;
+    border-radius: 20px;
+    border: 0px;
+    color: #9A76D0;
+
+}
+
+/* tag */
+
+#tag{
+    width: 95%;
+    height: 75px;
+    margin: auto;
+    margin-top: 20px;
+    border: 1px solid transparent;
+    background-color: #F3F5FB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#tag>h1{
+    color: #6f8093;
+    font-size: 28px;
+    font-weight: 300;
+}
+
+#tag>h1>span{
+    color: #9A76D0;
+}
+
+/* banner_tag */
+
+#banner_tag{
+    border: 1px solid transparent;
+    width: 200px;
+    height: 250px;
+    position: absolute;
+     top: 430px;
+    left: 20px; 
+}
+
+
+
+/* service */
+
+#service{
+    border: 1px solid transparent;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+#service>h6{
+    color: #6f8093;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+#service>h3{
+    font-size: 48px;
+    color: #293240;
+    font-weight: 520;
+    margin-top: 15px;
+}
+#service>div{
+    width: 90%;
+    margin-top: 70px;
+    display: flex;
+    border: 1px solid transparent;
+    padding: 20px;
+    line-height: 25px;
+    gap: 60px;
+}
+#service>div>div>img{
+    display: block;
+    margin: auto;
+}
+#service>div>div>h3{
+    margin-top: 15px;
+    text-align: center;
+    color: #293240;
+    font-size: 24px;
+    font-weight: 500;
+}
+#service>div>div>p{
+    margin-top: 15px;
+    text-align: center;
+    color: #6f8093;
+    font-size: 18px;
+    font-weight: 500;
+}
+#service>button{
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 30px;
+    border: 3px solid #9A76D0;
+    color: #9A76D0;
+    background-color: transparent;
+}
+
+
+
+/* operations */
+
+#operations{
+    width: 85%;
+    margin: auto;
+    margin-top: 10px;
+    border: 1px solid transparent;
+    text-align: center;
+    padding: 50px;
+    background-color: #F3F5FB;
+    /* justify-content: center; */
+}
+#operations>h2{
+    font-size: 48px;
+    color: #293240;
+    font-weight: 300;
+}
+#operations>div{
+    border: 1px solid transparent;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+    margin-top: 30px;
+
+}
+#operations>div>div>h2{
+    text-align: center;
+    font-size: 90px;
+    color: #6f8093;
+    font-weight: 600;
+}
+#operations>div>div>p{
+    text-align: center;
+    font-size: 14px;
+    color: #293240;
+    font-weight: 300;
+}
+
+/* opration_overflow */
+
+#opration_overflow{
+    border: 1px solid transparent;
+    width: 220px;
+    height: 250px;
+    position: absolute;
+    top: 1570px;
+    left: 60px; 
+}
+
+
+
+/* benefits */
+
+
+#benefits{
+    border: 1px solid transparent;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+#benefits>h6{
+    color: #6f8093;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+#benefits>h3{
+    font-size: 48px;
+    color: #293240;
+    font-weight: 520;
+    margin-top: 15px;
+}
+#benefits>h4{
+    font-size: 28px;
+    color: #6f8093;
+    font-weight: 520;
+    margin-top: 15px;
+}
+
+#benefits>div{
+    width: 90%;
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    border: 1px solid transparent;
+    padding: 20px;
+    line-height: 25px;
+    gap: 60px;
+}
+#benefits>div>div>img{
+    display: block;
+    margin: auto;
+}
+#benefits>div>div>h3{
+    margin-top: 15px;
+    text-align: center;
+    color: #293240;
+    font-size: 24px;
+    font-weight: 500;
+}
+#benefits>div>div>p{
+    margin-top: 15px;
+    text-align: center;
+    color: #6f8093;
+    font-size: 18px;
+    font-weight: 500;
+}
+#benefits>button{
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 30px;
+    border: 3px solid #9A76D0;
+    color: #9A76D0;
+    background-color: transparent;
+}
+
+
+/* news */
+
+#news{
+    border: 1px solid transparent;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    background-color: #F3F5FB;
+}
+
+#news>h6{
+    font-size: 28px;
+    color: #6f8093;
+    font-weight: 520;
+    margin-top: 15px;
+}
+
+#news>h3{
+    font-size: 48px;
+    color: #293240;
+    font-weight: 520;
+    margin-top: 15px;
+}
+
+#news>div{
+    width: 90%;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    border: 1px solid transparent;
+    padding: 20px;
+    line-height: 25px;
+    gap: 30px;
+}
+#news>div>div{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: 1px solid transparent;
+    background-color: white;
+}
+#news>div>div>img{
+    width: 100%;
+    height: 200px;
+    display: block;
+    margin: auto;
+}
+
+#news>div>div>h6{
+    padding: 0 20px;
+    margin-top: 15px;
+    text-align: left;
+    color: #6f8093;
+    font-size: 12px;
+    font-weight: 500;
+}
+#news>div>div>h3{
+    margin-top: 3px;
+    padding: 0 20px;
+    text-align: left;
+    color: #293240;
+    font-size: 24px;
+    font-weight: 540;
+}
+
+#news>div>div>div>p{
+    padding:0  20px 20px  20px;
+    margin-top: 15px;
+    line-height: 25px;
+    text-align: left;
+    color: #6f8093;
+    font-size: 19px;
+    font-weight: 540;
+}
+
+
+/* started */
+
+#started{   
+    width: 100%;
+    height: 280px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid transparent;
+
+}
+#started>div:first-child{
+    text-align: center;
+    font-size: 30px;
+    color: #293240;
+}
+#started>div:last-child{
+    display: flex;
+    justify-content: space-evenly;
+}
+#started>div:last-child>button:first-child{
+    padding: 15px 25px;
+    border-radius: 30px;
+    border: 3px solid #9A76D0;
+    color: #9A76D0;
+    background-color: transparent;
+}
+#started>div:last-child>button:last-child{
+    padding: 15px 25px;
+    border-radius: 30px;
+    border: 0px;
+    color: white;
+    background-color: #9A76D0;
+}
