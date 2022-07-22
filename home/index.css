@@ -75,6 +75,7 @@
     height: 520px;
     border: 1px solid transparent;
     display: flex;
+    margin-top: -50px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -274,7 +275,7 @@
     width: 220px;
     height: 250px;
     position: absolute;
-    top: 1570px;
+    top: 1600px;
     left: 60px;
 }
 
