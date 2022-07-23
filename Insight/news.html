@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newspage</title>
+    <link rel="stylesheet" href="./news.css"/>
+  </head>
+
+  <body onload="newsAppend(store)">
+    <div id="navbar">
+      <div>
+         <a href="index.html"><img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5ee401ee1f08215e6dbf0661_color-lettermark.svg"
+          alt=""></a>
+      </div>
+      <div>
+          <a href="/">
+              <h2>SERVICES</h2>
+          </a>
+          <a href="/">
+              <h2>SECURITY</h2>
+          </a>
+          <a href="/">
+              <h2>TEAM</h2>
+          </a>
+          <a href="/">
+              <h2>CAREERS</h2>
+          </a>
+          <a href="./insight.html">
+            <h2>INSIGHTS</h2>
+        </a>
+        <a href="../contact/contect.html">
+            <h2>CONTACT</h2>
+        </a>
+      </div>
+  </div>
+    <div id="top">
+      <h4 id="type"></h4>
+      <h1 id="heading"></h1>
+      <h3 id="subheading"></h3>
+      <h3 id="summery"></h3>
+      <h4 id="author"></h4>
+      <h4 id="date"></h4>
+    </div>
+    <img id="image" />
+    <div id="contant">
+      <h4>1. A move towards pricing transparency 🔍</h4>
+      <p>
+        There have been public calls for more pricing transparency in healthcare
+        for decades, but limited public interest in an issue that few felt (or
+        could even attribute) acutely. The explosion of high-deductible plans
+        has turned those disparate sparks into a flame.
+      </p>
+      <p>
+        With the executive order issued in June explicitly aiming to force
+        providers and plans to operate with greater transparency, many RCM
+        operations will scramble to set up the infrastructure necessary to
+        support transparency. Given that few have the technology, operations, or
+        infrastructure in place to offer transparency, it will take time, but
+        there is finally momentum.
+      </p>
+
+      <h4>2. Widespread automation 🤖</h4>
+      <p>
+        If there was a healthcare executive at the JP Morgan conference who
+        didn’t speak about automation, I must have missed it. 2019 saw
+        automation technologies prove themselves across a number of functions,
+        particularly on the administrative side, providing organizations with
+        the case studies and evidence needed to push through new initiatives.
+      </p>
+
+      <h4>3. Heightened focus on security 🔐</h4>
+      <p>
+        As evidenced by the media fervor over Ascension's partnership with
+        Google, consumers are becoming increasingly concerned about the privacy
+        and security of their personal data. This increased awareness is coming
+        amidst a broad movement of data towards the cloud and many, if not all,
+        revenue cycle functions to outside service providers. Providers will
+        mitigate risk by demanding higher standards of security and compliance
+        from all their vendors. Good news for audit and certification firms.
+      </p>
+
+      <h4>4. Ambient AI-driven transcription doesn’t pan out 💻</h4>
+      <p>
+        2019 saw a number of startups such as Robin, Notable, and Suki hoping to
+        take the technology that had made Alexa and Siri household names and use
+        it to finally free physicians from documentation--an AI scribe that
+        would passive listen to an encounter and create notes. Unfortunately,
+        the bar for accuracy combined with the technical challenge of distilling
+        a conversation (rather than direct dictation) to accurate and concise
+        clinical notes is far beyond current technology. Expect to see these
+        startups narrow their focus to something that looks a lot like Nuance’s
+        current offerings or shift their focus to other parts of the patient
+        journey or physician experience.
+      </p>
+
+      <h4>5. More provider-payer collaboration 💸</h4>
+      <p>
+        As frustration with the increasing inefficiency of the traditional
+        revenue cycle process has grown and value-based payment initiatives
+        begin to demonstrate positive returns, expect to see both sides continue
+        to find new and creative ways to align interests to reduce costs and
+        increase predictability and transparency for both sides.
+      </p>
+
+      <h4>6. Clean, well-structured data 🧱</h4>
+      <p>
+        As both vendors and providers continue to see their efforts to adopt new
+        technologies get blocked or hamstrung by issues of data access, format,
+        and fragmentation, look for large investments in data unification
+        efforts that will allow organizations to more easily adopt or build
+        in-house solutions.
+      </p>
+
+      <h4>7. Growth in outpatient CDI 📁</h4>
+      <p>
+        The AHA has reported that outpatient revenue is now roughly equivalent
+        (95%) to inpatient revenue for American hospitals[1]. Naturally, with
+        the increased revenue comes increased revenue risk. Thorough and
+        accurate documentation in the outpatient setting will play a more
+        meaningful role in revenue integrity than ever. As coding automation
+        rates increase due to technologies like ours, look for RCM operations to
+        increasingly deploy their coders to outpatient CDI efforts alongside the
+        adoption of tools like Iodine and Artifact Health.
+      </p>
+
+      <h4>8. VC 🤝 RCM</h4>
+      <p>
+        One of the PE community’s favorite hunting grounds is about to be
+        overrun by Stanford grads in Patagonia vests. Over the last couple of
+        years, we have seen a remarkable number of companies coming through
+        YCombinator or being funded by tier-one venture funds that are focused
+        on addressing various pieces of the revenue cycle. While not all of
+        these firms have found strong product-market fit, they have educated the
+        venture capital community on both the scale of the revenue cycle
+        industry and the opportunities for technology to transform it.
+      </p>
+
+      <h4>
+        9. Providers accelerate their efforts to outsource their revenue cycle
+        🚪
+      </h4>
+      <p>
+        R1 is projecting a 12% annual growth in outsourced RCM through 2022.
+        That number may turn out to be conservative as automation technology and
+        offshore labor pools drive substantive cost and efficiency benefits to
+        scaled RCM operations.
+      </p>
+
+      <h4>10. Better measurement and analytics 📊</h4>
+      <p>
+        With better infrastructure, data, and tooling, RCM operations will be
+        empowered to measure and track all the things they have always been
+        wanting to and a handful they probably haven’t yet imagined that they
+        could.
+      </p>
+    </div>
+    <div id="navigation">
+      <button id="next" onclick="navigation(0,data,store)">
+        PREVIOUS ARTICLE
+      </button>
+      <div id="logo">
+        <img src="./logo/facebook.png" />
+        <img src="./logo/linkedin.png" />
+        <img src="./logo/twitter.png" />
+      </div>
+      <button id="prev" onclick="navigation(1,data,store)">NEXT ARTICLE</button>
+    </div>
+    <div id="news_main">
+      <h1>Related Posts</h1>
+      <div id="news_div"></div>
+    </div>
+    <div id="subscribe">
+      <div id="s1">
+        <h1>Stay up to date</h1>
+        <h3>
+          Get the latest in Industry news and insights <br />delivered straignt
+          to your inbox
+        </h3>
+      </div>
+      <div id="s2">
+        <input id="email" type="email" placeholder="email address" required />
+        <button>SUBSCRIBE</button>
+      </div>
+    </div>
+    <div id="footer">
+      <div>
+          <div>
+              <img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e6edda6e64d7d84dcdae233_logo-white.png"
+                  alt="">
+              <p>Medical coding automation</p>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fas fa-hand-peace"></i>
+          </div>
+          <div>
+              <div>
+                  <p>Technology</p>
+                  <p>Solutions</p>
+                  <p>Security</p>
+              </div>
+              <div>
+                  <p>Company</p>
+                  <p>Team</p>
+                  <p>Contact</p>
+                  <p>Careers</p>
+              </div>
+              <div>
+                  <p>Legal</p>
+                  <p>Privacy policy</p>
+                  <p>Cookies</p>
+              </div>
+              <div>
+                  <p>Resources</p>
+                  <p>Articles</p>
+                  <p>RFP guide for medical coding</p>
+                  <p>Medical coding automation checklist</p>
+              </div>
+          </div>
+      </div>
+      <h3>© Fathom, Inc. 2022</h3>
+  </div>
+  </body>
+</html>
+
+<script src="./news.js">
+ 
+</script>

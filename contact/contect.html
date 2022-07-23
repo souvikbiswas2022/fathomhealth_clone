@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* navbar */
+
+#navbar {
+    width: 100%;
+    border: 1px solid transparent;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 40% 55%;
+    height: 64.78px;
+    padding: 0 20px;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#navbar>div:first-child {
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+}
+
+#navbar>div:first-child>a>img {
+    width: 145px;
+    height: 25px;
+    display: block;
+    margin: left;
+    border: 1px solid transparent;
+    margin-left: 90px;
+}
+
+#navbar>div:last-child {
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+#navbar>div:last-child>a {
+    text-decoration: none;
+    color: rgb(30, 30, 30);
+    font-size: 10px;
+    
+
+}
+
+        #container{
+            display: flex;
+            width: 100%;
+            height: 800px;
+            /* border: 1px solid gray; */
+        }
+      
+        #left{
+           width: 60%;
+           height: auto;
+           /* border: 1px solid red; */
+           margin-right: 20px;
+        }
+        #right{
+            width: 35%;
+           height: auto;
+           /* border: 1px solid red; */
+        }
+        #left h1{
+            margin-left: 40px;
+           font-size: 40px;
+        }
+        #left p{
+            margin-left: 40px;
+            font-size: 25px;
+            color: gray;  
+        }
+        #right h1{
+            margin-left: 10px;
+            font-size: 20px;
+
+        }
+        #right p{
+            margin-left: 10px;
+            font-size: 20px;
+            color: gray;
+
+        }
+        #right p1{
+            margin-left: 10px;
+            font-size: 15px;
+            color:rgb(131, 131, 250);
+
+        }
+        #right img{
+            width: 70%;
+            height: 60%;
+            margin-left: 60px;
+            margin-top: 30px;
+        }
+        #lower{
+            
+            width: auto;
+            height: 600px;
+            /* background-color: rgb(233, 227, 227); */
+            background-color: #e9eff1;
+
+        }
+        #lower h1{
+            margin-left: 5%;
+            padding-top: 5%;
+            font-size: 45px;
+            font-weight: 400;
+        }
+        #lower p{
+            margin-left: 5%;
+            margin-top: -15px;
+            font-size: 20px;
+            margin-bottom: 90px;
+        }
+        .box{
+            display: flex;
+            width: 90%;
+            height: 40%;
+            margin: auto;
+            /* border: 1px solid red; */
+            justify-content: space-around;
+        }
+        .block{
+            width: 22%;
+            height: 80%;
+            margin-left: 10px;
+            /* border: 1px solid seagreen; */
+        }
+        .block img{
+            width: auto;
+            height: 40%;
+            margin-left: 35px;
+        }
+        .block h6{
+            font-size: 22px;
+            margin-top: 1px ;
+            margin-left: 35px ;
+        }
+         .block p{
+           
+            margin-left: 35px ;
+            color: gray;
+        }
+        #form{
+            margin-left: 40px;
+            
+        }
+        .form-control{
+            margin-bottom:20px;
+            position: relative;
+        }
+        
+        .form-control label{
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+        .form-control input {
+            width: 100%;
+            border: 2px solid #f0f0f0;
+            display: block;
+        }
+        .form-control input:focus{
+            outline: 0;
+            border-color: #777;
+        }
+        /* .form-control.success input{
+            border-color: #2ecc71;
+        }  */
+        .form-control.error input{
+            border-color: #e74c3c;
+        } 
+        .form-control small{
+            color: #e74c3c;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            visibility: hidden;
+        }
+        .form-control small{
+            visibility: visible;
+        }
+        #btn{
+            background: #9a76d0;;
+            border-color: #9a76d0;;
+            border-radius: 6px;
+            border: none;
+            outline: none;
+            color: #fff;
+            display: block;
+            text-transform: uppercase;
+        }
+       @media(max-width:998px){
+        #container{
+            width: calc(100vw-35vw);
+            max-width:100%;
+        }
+       }
+
+       /* footer */
+
+
+#footer {
+    width: 100%;
+    margin: auto;
+    height: 400px;
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://cdn2.hubspot.net/hubfs/6570376/assets2020/footer-bg.png");
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#footer>h3 {
+    margin-top: 70px;
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+}
+
+#footer>div {
+    width: 90%;
+    border: 1px solid transparent;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    padding: 30px 20px;
+}
+
+#footer>div>div:first-child {
+    border: 1px solid transparent;
+    padding-left: 30px;
+}
+
+#footer>div>div:first-child>img {
+    width: 155px;
+    height: 35px;
+}
+
+#footer>div>div:first-child>p {
+    font-size: 18px;
+    margin-top: 15px;
+    color: #6f8093;
+}
+
+#footer>div>div:first-child>i {
+    padding: 10px;
+    background-color: #6f8093;
+    border-radius: 50%;
+    margin-top: 35px;
+    margin-left: 3px;
+    color: white;
+}
+
+#footer>div>div:last-child {
+    border: 1px solid transparent;
+    display: flex;
+    gap: 50px;
+}
+
+#footer>div>div:last-child>div>p:first-child {
+    font-size: 18px;
+    margin-top: 15px;
+    color: #6f8093;
+}
+
+#footer>div>div:last-child>div>p {
+    font-size: 16px;
+    margin-top: 15px;
+    color: #FFFFFF;
+}
+
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div>
+           <a href="../home/index.html"><img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5ee401ee1f08215e6dbf0661_color-lettermark.svg"
+            alt=""></a>
+        </div>
+        <div>
+            <a href="">
+                <h2>SERVICES</h2>
+            </a>
+            <a href="/">
+                <h2>SECURITY</h2>
+            </a>
+            <a href="/">
+                <h2>TEAM</h2>
+            </a>
+            <a href="/">
+                <h2>CAREERS</h2>
+            </a>
+            <a href="../Insight/insight.html">
+                <h2>INSIGHTS</h2>
+            </a>
+            <a href="../contact/contect.html">
+                <h2>CONTACT</h2>
+            </a>
+        </div>
+    </div>
+    <div id="container">
+        <div id="left">
+            <h1>Request a call</h1>
+            <p>Our team would love to work with you to understand your current operation and provide a free automation ROI analysis.</p>
+          <form class="form" id="form">
+            <div class="form-control">
+                <label>First Name</label><br>
+                <input type="text" name="" id="fname"  autocomplete="off"><br>
+                <small></small>
+            </div>
+            <div class="form-control">
+                <label>Last Name</label><br>
+                <input type="text" name="" id="lname"  autocomplete="off"><br>
+                <small></small>
+            </div>
+            <div class="form-control">
+                <label>Company Email</label><br>
+                <input type="text" name="" id="email"  autocomplete="off"><br>
+                <small></small>
+            </div>
+            <div class="form-control">
+                <label>Phone Number</label><br>
+                <input type="Number" name="" id="phone"  autocomplete="off"><br>
+                <small></small>
+            </div>
+            <div class="form-control">
+                <label>massage</label><br>
+                <input type="text" name="" id="msge"  autocomplete="off"><br>
+                <small></small>
+            </div>
+            <input type="submit" name="" id="btn">
+          </form>
+
+          <!-- </div> -->
+        </div>
+
+        <div id="right">
+            <h1>Not ready for a call yet?</h1>
+            <p>We would love to send you some additional details.</p>
+            <p1>REQUEST A WHITE PAPER</p1>
+            <h1>Interested in career opportunities with Fathom?</h1>
+            <p>Check our our open positions at the link below.</p>
+            <p1>EXPLORE CAREERS</p1>
+            <a href="RPF Guid.html"><img src="https://cdn2.hubspot.net/hubfs/6570376/hub_generated/resized/1af430d8-cc35-4ae0-8e0c-23bdaad97d25.png"/></a>
+        </div>
+    </div>
+    <div id="lower">
+        <h1>Other ways to get in touch</h1>
+        <p>Interested in career opportunities with Fathom? Check out our current openings or email careers@fathomhealth.com.</p>
+        <div class="box">
+            <div class="block"> <img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e8751b7aa63f43e28b8e2bb_noun_Email_3215035.svg">
+             <h6>Email</h6>
+             <p>hi@fathomhealth.com</p>
+            </div>
+            <div class="block"> <img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e8751eb6b2b0379acfd3ce3_noun_chatting_2986337.svg">
+                <h6>Chat</h6>
+                <p>Monday - Friday
+                    9am - 7pm PST</p>
+               </div>
+               <div class="block"> <img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e8a0475f99d7c5ee4735bc0_noun_golden%20gate%20bridge_1982072.svg">
+                <h6>San Francisco
+                </h6>
+                <p>51 Federal Street
+                    Suite 402
+                    San Francisco, CA 94107</p>
+               </div>
+               <div class="block"> <img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e8a04e306f6706b2dd2dd8b_noun_building_2525860.svg">
+                <h6>Toronto
+                </h6>
+                <p>250 University Avenue
+                    Suite 231
+                    Toronto, ON M5H 3E5</p>
+               </div>
+            
+        </div>
+    </div>
+    <div id="footer">
+        <div>
+            <div>
+                <img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e6edda6e64d7d84dcdae233_logo-white.png"
+                    alt="">
+                <p>Medical coding automation</p>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fas fa-hand-peace"></i>
+            </div>
+            <div>
+                <div>
+                    <p>Technology</p>
+                    <p>Solutions</p>
+                    <p>Security</p>
+                </div>
+                <div>
+                    <p>Company</p>
+                    <p>Team</p>
+                    <p>Contact</p>
+                    <p>Careers</p>
+                </div>
+                <div>
+                    <p>Legal</p>
+                    <p>Privacy policy</p>
+                    <p>Cookies</p>
+                </div>
+                <div>
+                    <p>Resources</p>
+                    <p>Articles</p>
+                    <p>RFP guide for medical coding</p>
+                    <p>Medical coding automation checklist</p>
+                </div>
+            </div>
+        </div>
+        <h3>© Fathom, Inc. 2022</h3>
+    </div>
+</body>
+</html>
+<script>
+
+
+
+   const form=document.getElementById("form");
+   const fname=document.getElementById("fname");
+   const lname=document.getElementById("lname");
+   const email=document.getElementById("email");
+   const phone=document.getElementById("phone");
+   const msge=document.getElementById("msge");
+  
+   form.addEventListener("submit",(event)=>{
+    event.preventDefault();
+    validate();
+   
+   })
+     
+   const sendData=(sRate, count)=>{
+    if(sRate===count){
+        alert("Registartion Successfull")
+    }
+   }
+   const SuccessMsg=()=>{
+    let formCon=document.getElementsByClassName("form-control");
+    alert("Registartion Successfull")
+    
+    var count=formCon.length-1;
+    for(var i=0;i<formCon.lenght;i++){
+        if(formCon[i].className==="form-control success"){
+            let sRate=0+i;
+            console.log (sRate);
+            sendData(sRate,count);
+        }else{
+            return false;
+        }
+    }
+   }
+
+   const isEmail=(emailVal)=>{
+    return true;
+       }
+
+    const validate=()=>{
+    const fnameVal=fname.value.trim();
+   const lnameVal=lname.value.trim();
+   const emailVal=email.value.trim();
+   const phoneVal=phone.value.trim();
+   const msgeVal=msge.value.trim();
+
+   if(fnameVal=== ""){
+    setErrorMsg(fname,"Please complete this required field.");
+   }
+   else if(fname.length<=2){
+    setErrorMsg(fname,"Please complete this required field.");
+   }
+   else{
+    setSuccessMsg(fname);
+   }
+
+
+   if(lnameVal===""){
+    setErrorMsg(lname,"Please complete this required field.");
+   }
+   else if(lname.lenght<=2){
+    setErrorMsg(lname,"Please complete this required field.")
+   }
+   else{
+    setSuccessMsg(lname)
+   }
+
+    
+   if(emailVal===""){
+    setErrorMsg(email,"Please complete this required field.");
+   }else if(!isEmail(emailVal)){
+    setErrorMsg(email,"Not a valid Email")
+   }else{
+    setSuccessMsg(email)
+   }
+
+   
+   
+ if(phoneVal===""){
+    setErrorMsg(phone,"Please complete this required field.");
+   
+   }
+   else if((phoneVal.lenght<10 ) || (phoneVal.lenght>10) ){ 
+    setErrorMsg(phone,"Not a valid Number")
+   
+   }
+  else {
+    setSuccessMsg(phone)
+  
+   }
+
+
+
+   if(msgeVal===""){
+    setErrorMsg(msge,"Please complete this required field.");
+   }
+   else if(msge.lenght<=2){
+    setErrorMsg(msge,"Please complete this required field.")
+   }
+   else{
+    setSuccessMsg(msge)
+   }
+   SuccessMsg()
+    }
+    
+   
+    function setErrorMsg(input,errormsgs){
+        const formControl=input.parentElement;
+        const small=formControl.querySelector("small");
+        formControl.className="form-control error";
+        small.innerText=errormsgs;
+        status=false;
+    }
+    function setSuccessMsg(input){
+        const formControl=input.parentElement;
+        const small=formControl.querySelector("small");
+        formControl.className="form-control success";
+        small.innerText="";
+    }
+
+
+    
+
+
+
+</script>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fathom Blog</title>
+    <link rel="stylesheet" href="./insight.css" />
+  </head>
+  <body onload="append(data,5)">
+    <div id="navbar">
+      <div>
+         <a href="../home/index.html"><img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5ee401ee1f08215e6dbf0661_color-lettermark.svg"
+          alt=""></a>
+      </div>
+      <div>
+          <a href="">
+              <h2>SERVICES</h2>
+          </a>
+          <a href="/">
+              <h2>SECURITY</h2>
+          </a>
+          <a href="/">
+              <h2>TEAM</h2>
+          </a>
+          <a href="/">
+              <h2>CAREERS</h2>
+          </a>
+          <a href="./insight.html">
+              <h2>INSIGHTS</h2>
+          </a>
+          <a href="../contact/contect.html">
+              <h2>CONTACT</h2>
+          </a>
+      </div>
+  </div>
+    <div id="top_most">
+      <h1>News,resources,and insights</h1>
+      <div>
+        <p>
+          The latest from the Fathom team on artificial intelligence, revenue
+          cycle management, digital health and everything in between.
+        </p>
+      </div>
+    </div>
+    <div id="main">
+      <div id="top_news">
+        <img />
+        <div id="right">
+          <h6></h6>
+          <h3></h3>
+          <h4></h4>
+          <p></p>
+        </div>
+      </div>
+      <div id="filter">
+        <h3 onclick="append(data,(data.length-1))">All <br />Posts</h3>
+        <h3 onclick="filter('INDUSTRY NEWS')">Industry <br />News</h3>
+        <h3 onclick="filter('AUTOMATION')">Automation</h3>
+        <h3 onclick="filter('PRODUCT NEWS')">Product <br />News</h3>
+        <h3 onclick="filter('ARTIFICIAL INTELLIGENCE')">
+          Artificial <br />Intelligence
+        </h3>
+        <h3 onclick="filter('INSIDER')">Insider</h3>
+        <h3 onclick="filter('MACHINE LEARNING')">Machine <br />Learning</h3>
+        <h3 onclick="filter('PRESS RELEASE')">
+          Press<br />
+          Release
+        </h3>
+        <h3 onclick="filter('QUALITY')">Quality</h3>
+      </div>
+      <div id="news_div"></div>
+    </div>
+    <button id="btn" onclick="loadMore()">LOAD MORE POSTS</button>
+    <div id="subscribe">
+      <div id="s1">
+        <h1>Stay up to date</h1>
+        <h3>
+          Get the latest in Industry news and insights <br />delivered straignt
+          to your inbox
+        </h3>
+      </div>
+      <div id="s2">
+        <input id="email" type="email" placeholder="email address" required />
+        <button>SUBSCRIBE</button>
+      </div>
+    </div>
+    <div id="footer">
+      <div>
+          <div>
+              <img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e6edda6e64d7d84dcdae233_logo-white.png"
+                  alt="">
+              <p>Medical coding automation</p>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fas fa-hand-peace"></i>
+          </div>
+          <div>
+              <div>
+                  <p>Technology</p>
+                  <p>Solutions</p>
+                  <p>Security</p>
+              </div>
+              <div>
+                  <p>Company</p>
+                  <p>Team</p>
+                  <p>Contact</p>
+                  <p>Careers</p>
+              </div>
+              <div>
+                  <p>Legal</p>
+                  <p>Privacy policy</p>
+                  <p>Cookies</p>
+              </div>
+              <div>
+                  <p>Resources</p>
+                  <p>Articles</p>
+                  <p>RFP guide for medical coding</p>
+                  <p>Medical coding automation checklist</p>
+              </div>
+          </div>
+      </div>
+      <h3>© Fathom, Inc. 2022</h3>
+  </div>
+  </body>
+</html>
+
+<script src="insight.js"></script>
