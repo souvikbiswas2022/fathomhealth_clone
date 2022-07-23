@@ -4,6 +4,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
 #chat1{
     padding: 20px;
     border-radius: 50%;
@@ -495,9 +496,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(320.54deg, #00069F 0%, #120010 72.37%), linear-gradient(58.72deg, #69D200 0%, #970091 100%), linear-gradient(121.28deg, #8CFF18 0%, #6C0075 100%), linear-gradient(121.28deg, #8000FF 0%, #000000 100%), linear-gradient(180deg, #00FF19 0%, #24FF00 0.01%, #2400FF 100%), linear-gradient(52.23deg, #0500FF 0%, #FF0000 100%), linear-gradient(121.28deg, #32003A 0%, #FF4040 100%), radial-gradient(50% 72.12% at 50% 50%, #EB00FF 0%, #110055 100%);
-    background-blend-mode: screen, color-dodge, color-burn, screen, overlay, difference, color-dodge, normal;
-
+    background-image: url("https://cdn2.hubspot.net/hubfs/6570376/assets2020/footer-bg.png");
 }
 
 #footer>h3 {
@@ -539,10 +538,6 @@
     margin-left: 3px;
     color: white;
 }
-
-
-
-
 
 #footer>div>div:last-child {
     border: 1px solid transparent;
