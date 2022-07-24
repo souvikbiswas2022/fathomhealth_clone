@@ -11,16 +11,16 @@ let navbar= ()=>{
      <a href="/">
          <h2>SECURITY</h2>
      </a>
-     <a href="/">
+     <a href="./team.html">
          <h2>TEAM</h2>
      </a>
      <a href="/">
          <h2>CAREERS</h2>
      </a>
-     <a href="../Insight/insight.html">
+     <a href="./Insight/insight.html">
      <h2>INSIGHTS</h2>
  </a>
-     <a href="../contact/contect.html">
+     <a href="./contect.html">
          <h2>CONTACT</h2>
      </a>
  </div>`
