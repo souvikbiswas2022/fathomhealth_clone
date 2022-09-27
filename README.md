@@ -34,14 +34,14 @@ Cone of www.fathomhealth.com, is a coding automation platform designed to expedi
 ###  Insight page and Sorting functionality
 
 
-<img src="./gif/11.gif" width="900px"/>
+<img src="./gif/11.gif" width="900px" height="500px"/>
 
 
 
 ### Short tour of  News Page 
 
 
-<img src="./gif/22.gif" width="900px"/>
+<img src="./gif/22.gif" width="900px" height="500px"/>
 
 ## Deployed Link
 <a href="https://cheery-snickerdoodle-21f36c.netlify.app/">Fathomhealth</a>
