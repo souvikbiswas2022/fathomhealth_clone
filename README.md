@@ -28,7 +28,7 @@ Cone of www.fathomhealth.com, is a coding automation platform designed to expedi
 ###  Short Tour of Landing Page
 
 
-<img src="./gif/1.gif" width="900px" height="450px"/>
+<img src="./gif/1.gif" width="900px" height="500px"/>
 
 
 ###  Insight page and Sorting functionality
