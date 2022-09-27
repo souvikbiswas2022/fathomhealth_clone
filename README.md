@@ -18,9 +18,39 @@ Cone of www.fathomhealth.com, is a coding automation platform designed to expedi
 <li> Navbar and Footer </li>
 <li> Security page </li>
 <li> Team page </li>
-<li> Insight page </li>
+<li>  Dynamic Insight page and News Page</li>
 <li> Filtering functionality </li>
 <li> Contact page </li>
 
-## Screenshots
+## A glimpse of our website
+### ================================================================================
+
+###  Sort Tour of Landing Page
+
+### ================================================================================
+<img src="./gif/1.gif" width="900px"/>
+
+### ================================================================================
+
+###  Insight page and Sorting functionality
+
+### ================================================================================
+<img src="./gif/11.gif" width="900px"/>
+
+### ================================================================================
+
+### Sort tour of  News Page 
+
+### ================================================================================
+<img src="./gif/22.gif" width="900px"/>
+
+## Deployed Link
+<a href="https://cheery-snickerdoodle-21f36c.netlify.app/">Fathomhealth</a>
+
+## Authors
+
+<li>Souvik Biswas</li>
+<li>Vivek Bhad</li>
+<li>Vishal Kumar Patel</li>
+<li>Gourav Lala</li>
 
