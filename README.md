@@ -28,20 +28,20 @@ Cone of www.fathomhealth.com, is a coding automation platform designed to expedi
 ###  Short Tour of Landing Page
 
 
-<img src="./gif/1.gif" width="900px" height="500px"/>
+<img src="./gif/1.gif" width="900px" height="450px"/>
 
 
 ###  Insight page and Sorting functionality
 
 
-<img src="./gif/11.gif" width="900px" height="500px"/>
+<img src="./gif/11.gif" width="900px" height="450px"/>
 
 
 
 ### Short tour of  News Page 
 
 
-<img src="./gif/22.gif" width="900px" height="500px"/>
+<img src="./gif/22.gif" width="900px" height="450px"/>
 
 ## Deployed Link
 <a href="https://cheery-snickerdoodle-21f36c.netlify.app/">Fathomhealth</a>
